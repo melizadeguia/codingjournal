@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header';
+import Grid from '@mui/material/Grid';
+import JournalInput from './components/JournalInput';
+import TaskInput from './components/TaskInput';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Header />
+
+      <Grid container spacing={2}>
+      <Grid item xs={6}>
+        <JournalInput/>
+      </Grid>
+      <Grid item xs={6}>
+        <TaskInput/>
+      </Grid>
+      </Grid>
     </div>
-  );
+
+  )
 }
 
 export default App;

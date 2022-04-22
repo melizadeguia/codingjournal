@@ -1,0 +1,51 @@
+.task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+
+    h2{
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    form{
+        padding: 20px;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: rgba(182, 182, 182, 0.808);
+
+        textarea{
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .button{
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+        }
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+            font-size: 20px;
+        }
+        th{
+            background-color: black;
+            color: white;
+        }
+    }
+
+}
